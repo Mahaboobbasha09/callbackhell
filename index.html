@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function step1(a){
+            console.log("Place order")
+            a()
+        }
+        function step2(a){
+            console.log("Prepare pizza")
+            a()
+        }
+        function step3(a){
+            console.log("Bake Pizza")
+            a()
+        }
+        function step4(a){
+            console.log("Pack Pizza")
+            a()
+        }
+        function step5(){
+            console.log("Deliver Pizza")
+        }
+        step1(()=>{
+            step2(()=>{
+                step3(()=>{
+                    step4(()=>{
+                        step5()
+                    })
+                })
+            })
+        })
+
+        
+      
+    </script>
+</body>
+</html>
